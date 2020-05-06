@@ -1,0 +1,132 @@
+div#locald3 {
+	height: 700px;
+}
+
+div#locald3 h2 {
+	position: absolute;
+	width: 500px;
+	top: 25px;
+	left: 650px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+div#locald3 img {
+	position: absolute;
+	top: 75px;
+	left: 650px;
+}
+
+div#locald3 p {
+	position: absolute;
+	width: 400px;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: Georgia, Arial, sans-serif;
+}
+
+div#locald3 p#loc0 {
+	top: 80px;
+	left: 100px;
+}
+
+div#locald3 p#loc1 {
+	top: 210px;
+	left: 100px;
+}
+
+div#locald3 p#loc2 {
+	top: 340px;
+	left: 100px;
+}
+
+div#locald3 p#loc3 {
+	top: 480px;
+	left: 100px;
+}
+
+/* FC Dallas */
+p#markerA {
+	position: absolute;
+	top: 545px;
+	left: 790px;
+	display: block;
+}
+
+/* Dallas Cowboys*/
+p#markerB {
+	position: absolute;
+	top: 730px;
+	left: 750px;
+	display: block;
+}
+
+/* Dallas Stars */
+p#markerC {
+	position: absolute;
+	top: 800px;
+	left: 815px;
+	display: block;
+}
+
+/* Rough Riders */
+p#markerD {
+	position: absolute;
+	top: 820px;
+	left: 790px;
+	display: block;
+}
+
+/* Stonebriar */
+p#markerE {
+	position: absolute;
+	top: 740px;
+	left: 880px;
+	display: none;
+}
+
+/* Shops at Legacy */
+p#markerF {
+	position: absolute;
+	top: 925px;
+	left: 790px;
+	display: none;
+}
+
+/* Legacy West */
+p#markerG {
+	position: absolute;
+	top: 880px;
+	left: 750px;
+	display: none;
+}
+
+/* Downtown */
+p#markerH {
+	position: absolute;
+	top: 580px;
+	left: 840px;
+	display: none;
+}
+
+
+
+div#localButtons {
+	position: absolute;
+	top: 445px;
+	left: 100px;
+	width: 400px;
+	align-content: center;
+}
+
+div#localButtons button {
+	text-align: center;
+	background-color: #ffcc00;
+	margin: 10px;
+	font-size: 20pt;
+	font-family: Georgia, Arial, sans-serif;
+}

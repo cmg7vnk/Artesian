@@ -1,0 +1,49 @@
+div#amend3 {
+	height: 700px;
+}
+
+div#amend3 h2 {
+	position: absolute;
+	width: 500px;
+	top: 25px;
+	left: 25px;
+	margin: 0px;
+	padding: 0px;
+}
+
+
+div#amend3 img {
+	position: absolute;
+	top: 75px;
+	left: 650px;
+}
+
+div#amend3a {
+	position: absolute;
+	top: 75px;
+	left: 25px;
+	width: 550px;
+	height: 500px;
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 14pt;
+	font-family: Georgia, Arial, sans-serif;
+}
+
+div#amenButtons {
+	position: absolute;
+	top: 1050px;
+	left: 658px;
+	width: 500px;
+	align-content: center;
+}
+
+div#amenButtons button {
+	text-align: center;
+	background-color: #99ccff;
+	margin: 10px;
+	font-size: 20pt;
+	font-family: Georgia, Arial, sans-serif;
+}

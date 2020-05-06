@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Booking</title>
+	<link rel="stylesheet" type="text/css" href="css/booking.css">
+	<script src="js/artesian.js"></script>
+	<script src="js/booking.js"></script>
+	<!--<script src="jquery-3.4.1.js"></script>-->
+</head>
+<body>
+	<a id="top"></a>
+	<h1>Reserve a Court</h1>
+	<a href="amenities.html"><li>Return to Amenities</li></a>
+
+	<div id="tennis">
+
+		<div id="bookTennis">
+			<img src="images/tennisLogo.jpg">
+			<h2>Book Tennis Court</h2>
+
+			<p>
+				Click a time slot on the calendar to reserve a tennis court.<br><br>To cancel a request, please contact guest services.<br><br>Thank you!<br>
+			</p>
+
+			<p class="notice">
+				This showpiece assumes you have logged in<br>and have suite number <em>100</em>.
+			</p>
+			
+			<p id="tennisMsg">
+				Your court has been reserved.<br>A confirmation email has been sent with the details.<br>Enjoy your game!
+			</p>
+
+
+
+		</div> <!-- closing tag for id=bookTennis -->
+
+		<div id="calendarTennis">
+			<h2 id="calendarTitle">Week of:<br>March 15 - 21</h2>
+			<table>
+				<tr>
+					<th>Su</th>
+					<th>Mo</th>
+					<th>Tu</th>
+					<th>We</th>
+					<th>Th</th>
+					<th>Fr</th>
+					<th>Sa</th>
+				</tr>
+				<tr>
+					<td id="tSU10am" onclick="rsvTennis('tSU10am')">10am<br>to<br>12pm</td>
+					<td id="tMO10am" onclick="rsvTennis('tMO10am')">10am<br>to<br>12pm</td>
+					<td id="tTU10am" onclick="rsvTennis('tTU10am')">10am<br>to<br>12pm</td>
+					<td id="tWE10am" onclick="rsvTennis('tWE10am')">10am<br>to<br>12pm</td>
+					<td id="tTH10am" onclick="rsvTennis('tTH10am')">10am<br>to<br>12pm</td>
+					<td id="tFR10am" onclick="rsvTennis('tFR10am')">10am<br>to<br>12pm</td>
+					<td id="tSA10am" onclick="rsvTennis('tSA10am')" class="initRSV">RSV<br>Ste<br>200</td>
+				</tr>
+
+				<tr>
+					<td id="tSU12pm" onclick="rsvTennis('tSU12pm')">12pm<br>to<br>2pm</td>
+					<td id="tMO12pm" onclick="rsvTennis('tMO12pm')">12pm<br>to<br>2pm</td>
+					<td id="tTU12pm" onclick="rsvTennis('tTU12pm')">12pm<br>to<br>2pm</td>
+					<td id="tWE12pm" onclick="rsvTennis('tWE12pm')">12pm<br>to<br>2pm</td>
+					<td id="tTH12pm" onclick="rsvTennis('tTH12pm')">12pm<br>to<br>2pm</td>
+					<td id="tFR12pm" onclick="rsvTennis('tFR12pm')">12pm<br>to<br>2pm</td>
+					<td id="tSA12pm" onclick="rsvTennis('tSA12pm')">12pm<br>to<br>2pm</td>
+				</tr>
+
+				<tr>
+					<td id="tSU2pm" onclick="rsvTennis('tSU2pm')">2pm<br>to<br>4pm</td>
+					<td id="tMO2pm" onclick="rsvTennis('tMO2pm')">2pm<br>to<br>4pm</td>
+					<td id="tTU2pm" onclick="rsvTennis('tTU2pm')">2pm<br>to<br>4pm</td>
+					<td id="tWE2pm" onclick="rsvTennis('tWE2pm')">2pm<br>to<br>4pm</td>
+					<td id="tTH2pm" onclick="rsvTennis('tTH2pm')">2pm<br>to<br>4pm</td>
+					<td id="tFR2pm" onclick="rsvTennis('tFR2pm')">2pm<br>to<br>4pm</td>
+					<td id="tSA2pm" onclick="rsvTennis('tSA2pm')">2pm<br>to<br>4pm</td>
+				</tr>
+
+				<tr>
+					<td id="tSU4pm" onclick="rsvTennis('tSU4pm')">4pm<br>to<br>6pm</td>
+					<td id="tMO4pm" onclick="rsvTennis('tMO4pm')">4pm<br>to<br>6pm</td>
+					<td id="tTU4pm" onclick="rsvTennis('tTU4pm')">4pm<br>to<br>6pm</td>
+					<td id="tWE4pm" onclick="rsvTennis('tWE4pm')">4pm<br>to<br>6pm</td>
+					<td id="tTH4pm" onclick="rsvTennis('tTH4pm')"class="initRSV">RSV<br>Ste<br>400</td>
+					<td id="tFR4pm" onclick="rsvTennis('tFR4pm')">4pm<br>to<br>6pm</td>
+					<td id="tSA4pm" onclick="rsvTennis('tSA4pm')">4pm<br>to<br>6pm</td>
+				</tr>
+
+				<tr>
+					<td id="tSU6pm" onclick="rsvTennis('tSU6pm')">6pm<br>to<br>8pm</td>
+					<td id="tMO6pm" onclick="rsvTennis('tMO6pm')">6pm<br>to<br>8pm</td>
+					<td id="tTU6pm" onclick="rsvTennis('tTU6pm')">6pm<br>to<br>8pm</td>
+					<td id="tWE6pm" onclick="rsvTennis('tWE6pm')">6pm<br>to<br>8pm</td>
+					<td id="tTH6pm" onclick="rsvTennis('tTH6pm')">6pm<br>to<br>8pm</td>
+					<td id="tFR6pm" onclick="rsvTennis('tFR6pm')">6pm<br>to<br>8pm</td>
+					<td id="tSA6pm" onclick="rsvTennis('tSA6pm')">6pm<br>to<br>8pm</td>
+				</tr>
+
+				<tr>
+					<td id="tSU8pm" onclick="rsvTennis('tSU8pm')">8pm<br>to<br>10pm</td>
+					<td id="tMO8pm" onclick="rsvTennis('tMO8pm')">8pm<br>to<br>10pm</td>
+					<td id="tTU8pm" onclick="rsvTennis('tTU8pm')">8pm<br>to<br>10pm</td>
+					<td id="tWE8pm" onclick="rsvTennis('tWE8pm')">8pm<br>to<br>10pm</td>
+					<td id="tTH8pm" onclick="rsvTennis('tTH8pm')">8pm<br>to<br>10pm</td>
+					<td id="tFR8pm" onclick="rsvTennis('tFR8pm')" class="initRSV">RSV<br>Ste<br>800</td>
+					<td id="tSA8pm" onclick="rsvTennis('tSA8pm')">8pm<br>to<br>10pm</td>
+				</tr>
+
+			</table>
+
+
+		</div> <!-- closing tag for id=calendarTennis -->
+	</div> <!-- closing tag for id=tennis -->
+	<div id="tennisKey">
+		White Background = Available<br>
+		Yellow Background = Requested<br>
+		Gray Background = Reserved/Unavailable<br>
+	</div>
+
+	<div id="basketball">
+
+		<div id="bookBasketball">
+			<img src="images/basketLogo.jpg">
+			<h2>Book Basketball Court</h2>
+			
+			<p>
+				Click a time slot on the calendar to reserve a basketball court.<br><br>To cancel a request, please contact guest services.<br><br>Thank you!<br>
+			</p>
+
+			<p class="notice">
+				This showpiece assumes you have logged in<br>and have suite number <em>100</em>.
+			</p>
+			
+			<p id="basketMsg">
+				Your court has been reserved.<br>A confirmation email has been sent with the details.<br>Enjoy your game!
+			</p>
+
+		</div> <!-- closing tag for id=bookBasketball -->
+
+		<div id="calendarBasket">
+			<h2 id="calendarTitle">Week of:<br>March 15 - 21</h2>
+			<table>
+				<tr>
+					<th>Su</th>
+					<th>Mo</th>
+					<th>Tu</th>
+					<th>We</th>
+					<th>Th</th>
+					<th>Fr</th>
+					<th>Sa</th>
+				</tr>
+				<tr>
+					<td id="bSU10am" onclick="rsvBasket('bSU10am')">10am<br>to<br>12pm</td>
+					<td id="bMO10am" onclick="rsvBasket('bMO10am')">10am<br>to<br>12pm</td>
+					<td id="bTU10am" onclick="rsvBasket('bTU10am')">10am<br>to<br>12pm</td>
+					<td id="bWE10am" onclick="rsvBasket('bWE10am')">10am<br>to<br>12pm</td>
+					<td id="bTH10am" onclick="rsvBasket('bTH10am')">10am<br>to<br>12pm</td>
+					<td id="bFR10am" onclick="rsvBasket('bFR10am')">10am<br>to<br>12pm</td>
+					<td id="bSA10am" onclick="rsvBasket('bSA10am')" class="initRSV">RSV<br>Ste<br>200</td>
+				</tr>
+
+				<tr>
+					<td id="bSU12pm" onclick="rsvBasket('bSU12pm')">12pm<br>to<br>2pm</td>
+					<td id="bMO12pm" onclick="rsvBasket('bMO12pm')">12pm<br>to<br>2pm</td>
+					<td id="bTU12pm" onclick="rsvBasket('bTU12pm')">12pm<br>to<br>2pm</td>
+					<td id="bWE12pm" onclick="rsvBasket('bWE12pm')">12pm<br>to<br>2pm</td>
+					<td id="bTH12pm" onclick="rsvBasket('bTH12pm')">12pm<br>to<br>2pm</td>
+					<td id="bFR12pm" onclick="rsvBasket('bFR12pm')">12pm<br>to<br>2pm</td>
+					<td id="bSA12pm" onclick="rsvBasket('bSA12pm')">12pm<br>to<br>2pm</td>
+				</tr>
+
+				<tr>
+					<td id="bSU2pm" onclick="rsvBasket('bSU2pm')">2pm<br>to<br>4pm</td>
+					<td id="bMO2pm" onclick="rsvBasket('bMO2pm')">2pm<br>to<br>4pm</td>
+					<td id="bTU2pm" onclick="rsvBasket('bTU2pm')">2pm<br>to<br>4pm</td>
+					<td id="bWE2pm" onclick="rsvBasket('bWE2pm')">2pm<br>to<br>4pm</td>
+					<td id="bTH2pm" onclick="rsvBasket('bTH2pm')">2pm<br>to<br>4pm</td>
+					<td id="bFR2pm" onclick="rsvBasket('bFR2pm')">2pm<br>to<br>4pm</td>
+					<td id="bSA2pm" onclick="rsvBasket('bSA2pm')">2pm<br>to<br>4pm</td>
+				</tr>
+
+				<tr>
+					<td id="bSU4pm" onclick="rsvBasket('bSU4pm')">4pm<br>to<br>6pm</td>
+					<td id="bMO4pm" onclick="rsvBasket('bMO4pm')">4pm<br>to<br>6pm</td>
+					<td id="bTU4pm" onclick="rsvBasket('bTU4pm')">4pm<br>to<br>6pm</td>
+					<td id="bWE4pm" onclick="rsvBasket('bWE4pm')">4pm<br>to<br>6pm</td>
+					<td id="bTH4pm" onclick="rsvBasket('bTH4pm')"class="initRSV">RSV<br>Ste<br>400</td>
+					<td id="bFR4pm" onclick="rsvBasket('bFR4pm')">4pm<br>to<br>6pm</td>
+					<td id="bSA4pm" onclick="rsvBasket('bSA4pm')">4pm<br>to<br>6pm</td>
+				</tr>
+
+				<tr>
+					<td id="bSU6pm" onclick="rsvBasket('bSU6pm')">6pm<br>to<br>8pm</td>
+					<td id="bMO6pm" onclick="rsvBasket('bMO6pm')">6pm<br>to<br>8pm</td>
+					<td id="bTU6pm" onclick="rsvBasket('bTU6pm')">6pm<br>to<br>8pm</td>
+					<td id="bWE6pm" onclick="rsvBasket('bWE6pm')">6pm<br>to<br>8pm</td>
+					<td id="bTH6pm" onclick="rsvBasket('bTH6pm')">6pm<br>to<br>8pm</td>
+					<td id="bFR6pm" onclick="rsvBasket('bFR6pm')">6pm<br>to<br>8pm</td>
+					<td id="bSA6pm" onclick="rsvBasket('bSA6pm')">6pm<br>to<br>8pm</td>
+				</tr>
+
+				<tr>
+					<td id="bSU8pm" onclick="rsvBasket('bSU8pm')">8pm<br>to<br>10pm</td>
+					<td id="bMO8pm" onclick="rsvBasket('bMO8pm')">8pm<br>to<br>10pm</td>
+					<td id="bTU8pm" onclick="rsvBasket('bTU8pm')">8pm<br>to<br>10pm</td>
+					<td id="bWE8pm" onclick="rsvBasket('bWE8pm')">8pm<br>to<br>10pm</td>
+					<td id="bTH8pm" onclick="rsvBasket('bTH8pm')">8pm<br>to<br>10pm</td>
+					<td id="bFR8pm" onclick="rsvBasket('bFR8pm')" class="initRSV">RSV<br>Ste<br>800</td>
+					<td id="bSA8pm" onclick="rsvBasket('bSA8pm')">8pm<br>to<br>10pm</td>
+				</tr>
+
+			</table>
+		</div> <!-- closing tag for id=calendarBasket -->
+
+	</div> <!-- closing tag for id=basketball -->
+	<div id="basketKey">
+		White Background = Available<br>
+		Orange Background = Requested<br>
+		Gray Background = Reserved/Unavailable<br>
+	</div>
+
+	<div id="bottomLink">
+		<a href="#top">Return to Top</a>
+	</div>
+
+	
+</body>
+</html>
